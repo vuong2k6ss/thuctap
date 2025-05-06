@@ -1,0 +1,161 @@
+body{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.boxCard{
+    font-family: "Josefin Sans", sans-serif;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: linear-gradient(to right, #21A8C5, #39C6E5);
+    border-radius: 24px;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+.card-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card-body{
+    text-align: center;
+    color: white;
+    margin:90px 80px 90px 0px;
+}
+
+.card-btn{
+    max-width: 150px;
+    border-radius: 24px;
+    padding: 10px 20px 8px;
+    background-color: #39C6E5;
+    color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+.card-end{
+    margin-top: 16px;
+}
+
+.text-1{
+    font-style: italic;
+    color: white;
+}
+
+a{
+    text-decoration: none !important;
+    color: white;
+    font-weight: 700;
+}
+
+.phone{
+    margin: 80px;
+}
+
+.headPhone{
+    width: 100%;
+    height: 100%;
+}
+
+.input-container{
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.registInfor{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px 7px 20px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-container .icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+    .phone{
+        display: none;
+    }
+
+    .card-body{
+        text-align: center;
+        color: white;
+        margin:64px 16px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    .phone{
+        display: none;
+    }
+
+    .card-body{
+        text-align: center;
+        color: white;
+        margin:64px 48px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .card {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: linear-gradient(to right, #21A8C5, #39C6E5);
+        border-radius: 24px;
+        position: relative;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .phone {
+        flex: 1;
+        max-width: 400px;
+        margin: 40px;
+    }
+    
+    .card-body {
+        flex: 1;
+        max-width: 500px;
+        text-align: center;
+        color: white;
+        padding: 20px 0px;
+        margin: 0px 40px;
+    }
+    
+    .headPhone {
+        width: 100%;
+        height: auto;
+    }
+    
+}
